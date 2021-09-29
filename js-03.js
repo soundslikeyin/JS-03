@@ -16,7 +16,7 @@ function businessHours(dayNumber, hourNumber) {
 }
 
 function getDayNumber(janFirstDayNumber, yearDayNumber) {
-    let currentDayNumber = (yearDayNumber % 7) + janFirstDayNumber - 1;
+    let currentDayNumber = (yearDayNumber % 7) + janFirstDayNumber;
     if (currentDayNumber > 6 ) {
         currentDayNumber = currentDayNumber - 7;
     }
