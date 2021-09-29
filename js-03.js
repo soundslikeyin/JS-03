@@ -20,8 +20,8 @@ function getDayNumber(janFirstDayNumber, yearDayNumber) {
     if (currentDayNumber > 6 ) {
         currentDayNumber = currentDayNumber - 7;
     }
-    // window.alert("janFirstDayNumber is " + janFirstDayNumber);
-    // window.alert("Current Day Number is " + currentDayNumber);
+    // console.log("janFirstDayNumber is " + janFirstDayNumber);
+    // console.log("Current Day Number is " + currentDayNumber);
     return currentDayNumber;
 }
 
@@ -36,7 +36,7 @@ function getJanFirstDay(yearNumber) {
     janFirstDay.setDate(1);
     janFirstDay.setMonth(0);
     janFirstDay.setFullYear(yearNumber);
-    // window.alert("Jan First day is " + janFirstDay);
+    // console.log("Jan First day is " + janFirstDay);
     const janFirstDayNumber = janFirstDay.getDay();
     return janFirstDayNumber;
 }
@@ -47,8 +47,8 @@ function getDateDayNumber(dateNumber, monthNumber, yearNumber) {
     queryDate.setMonth(monthNumber);
     queryDate.setFullYear(yearNumber);
     const queryDateDayNumber = queryDate.getDay();
-    // window.alert("query date is" + queryDate);
-    // window.alert("day of the week is" + queryDateDayNumber );
+    // console.log("query date is" + queryDate);
+    // console.log("day of the week is" + queryDateDayNumber );
     return queryDateDayNumber;
 }
 
